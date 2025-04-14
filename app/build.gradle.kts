@@ -25,12 +25,6 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            buildConfigField("String", "BACKEND_URL",
-                "https://budgetbud.azurewebsites.net/")
-        }
-        debug {
-            buildConfigField("String", "BACKEND_URL",
-                "https://localhost:/")
         }
     }
     compileOptions {

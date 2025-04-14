@@ -1,4 +1,4 @@
-package `in`.sidhin.app.budgetbud.ui.theme
+package cin.sidhin.app.budgetbud.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

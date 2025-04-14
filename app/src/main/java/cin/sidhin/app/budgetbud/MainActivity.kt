@@ -1,4 +1,4 @@
-package `in`.sidhin.app.budgetbud
+package cin.sidhin.app.budgetbud
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
