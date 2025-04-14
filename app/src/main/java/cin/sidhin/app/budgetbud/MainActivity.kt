@@ -11,9 +11,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import `in`.sidhin.app.budgetbud.ui.theme.BudgetBudTheme
+import cin.sidhin.app.budgetbud.data.Budget
+import cin.sidhin.app.budgetbud.data.BudgetStore
+import cin.sidhin.app.budgetbud.ui.theme.BudgetBudTheme
 
 class MainActivity : ComponentActivity() {
+    private var currentBudget: Budget? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -27,6 +31,7 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+        BudgetStore.registerListener { updatedBudget -> this.currentBudget = updatedBudget }
     }
 }
 
