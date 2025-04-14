@@ -1,4 +1,4 @@
-package `in`.sidhin.app.budgetbud.data
+package cin.sidhin.app.budgetbud.data
 
 data class Expense(
     val id: Int,

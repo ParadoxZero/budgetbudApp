@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "in.sidhin.app.budgetbud"
+    namespace = "cin.sidhin.app.budgetbud"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "in.sidhin.app.budgetbud"
+        applicationId = "cin.sidhin.app.budgetbud"
         minSdk = 30
         targetSdk = 35
         versionCode = 1
@@ -25,6 +25,12 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            buildConfigField("String", "BACKEND_URL",
+                "https://budgetbud.azurewebsites.net/")
+        }
+        debug {
+            buildConfigField("String", "BACKEND_URL",
+                "https://localhost:/")
         }
     }
     compileOptions {

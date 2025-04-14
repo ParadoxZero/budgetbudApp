@@ -1,4 +1,4 @@
-package `in`.sidhin.app.budgetbud
+package cin.sidhin.app.budgetbud
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("in.sidhin.app.budgetbud", appContext.packageName)
+        assertEquals("cin.sidhin.app.budgetbud", appContext.packageName)
     }
 }

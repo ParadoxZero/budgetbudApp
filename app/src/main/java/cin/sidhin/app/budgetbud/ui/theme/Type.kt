@@ -1,4 +1,4 @@
-package `in`.sidhin.app.budgetbud.ui.theme
+package cin.sidhin.app.budgetbud.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

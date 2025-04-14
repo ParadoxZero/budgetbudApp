@@ -1,4 +1,4 @@
-package `in`.sidhin.app.budgetbud
+package cin.sidhin.app.budgetbud
 
 import org.junit.Test
 
